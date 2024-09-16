@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>ALID</h1>
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="button-row">
+            <button onclick="appendNumber('1')">1</button>
+            <button onclick="appendNumber('2')">2</button>
+            <button onclick="appendNumber('3')">3</button>
+            <button onclick="setOperation('+')">+</button>
+        </div>
+        <div class="button-row">
+            <button onclick="appendNumber('4')">4</button>
+            <button onclick="appendNumber('5')">5</button>
+            <button onclick="appendNumber('6')">6</button>
+            <button onclick="setOperation('-')">-</button>
+        </div>
+        <div class="button-row">
+            <button onclick="appendNumber('7')">7</button>
+            <button onclick="appendNumber('8')">8</button>
+            <button onclick="appendNumber('9')">9</button>
+            <button onclick="setOperation('*')">*</button>
+        </div>
+        <div class="button-row">
+            <button onclick="appendNumber('0')">0</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="deleteLastCharacter()">Del</button>
+            <button onclick="setOperation('/')">/</button>
+        </div>
+        <div class="button-row">
+            <button onclick="setOperation('^')">^</button>
+            <button onclick="setOperation('sqrt')">√</button>
+            <button onclick="setOperation('log')">log</button>
+        </div>
+        <div class="button-row">
+            <button onclick="setOperation('exp')">exp</button>
+            <button onclick="setOperation('sin')">sin</button>
+            <button onclick="setOperation('cos')">cos</button>
+            <button onclick="setOperation('tan')">tan</button>
+        </div>
+        <div class="button-row">
+            <button onclick="setOperation('avg')">avg</button>
+            <button onclick="setOperation('median')">median</button>
+            <button onclick="setOperation('stddev')">stddev</button>
+            <button onclick="setOperation('real')">Real</button>
+        </div>
+        <div class="button-row">
+            <button onclick="setOperation('imaginary')">Imaginary</button>
+            <button onclick="setOperation('complex')">Complex</button>
+            <button onclick="setOperation('abs')">Abs</button>
+            <button onclick="memorySave()">M+</button>
+        </div>
+        <div class="button-row">
+            <button onclick="memoryRecall()">MR</button>
+            <button onclick="memoryClear()">MC</button>
+            <button onclick="memorySubtract()">M-</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
